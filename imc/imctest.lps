@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="imctest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="testimccalc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="51"/>
+        <CursorPos X="103" Y="59"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="34" Y="32"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="imccalc.pas"/>
+        <UnitName Value="ImcCalc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="27"/>
+        <CursorPos X="26" Y="45"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-fpcunit/src/fpcunit.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="676"/>
+        <CursorPos X="25" Y="693"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="7">
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Line="2" Column="30"/>
+      </Position>
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Line="65" Column="37" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Line="71" Column="4" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Line="46" Column="3" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Line="62" Column="15" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Column="40"/>
+      </Position>
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Line="77" Column="33" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="testimccalc.pas"/>
+        <Caret Line="58" Column="25" TopLine="41"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
