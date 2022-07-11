@@ -16,9 +16,8 @@
       <Unit>
         <Filename Value="testimccalc.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="51"/>
-        <CursorPos X="103" Y="59"/>
+        <TopLine Value="46"/>
+        <CursorPos X="89" Y="54"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
@@ -30,7 +29,7 @@
         <UnitName Value="Main"/>
         <EditorIndex Value="1"/>
         <TopLine Value="24"/>
-        <CursorPos X="34" Y="32"/>
+        <CursorPos X="89" Y="38"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -38,9 +37,10 @@
       <Unit>
         <Filename Value="imccalc.pas"/>
         <UnitName Value="ImcCalc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="27"/>
-        <CursorPos X="26" Y="45"/>
+        <TopLine Value="37"/>
+        <CursorPos X="90" Y="60"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
@@ -52,7 +52,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="7">
+    <JumpHistory HistoryIndex="8">
       <Position>
         <Filename Value="testimccalc.pas"/>
         <Caret Line="2" Column="30"/>
@@ -84,6 +84,10 @@
       <Position>
         <Filename Value="testimccalc.pas"/>
         <Caret Line="58" Column="25" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="imccalc.pas"/>
+        <Caret Line="60" Column="94" TopLine="43"/>
       </Position>
     </JumpHistory>
     <RunParams>

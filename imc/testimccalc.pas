@@ -68,10 +68,10 @@ begin
   FImcCalc.setWeight(110.0);
   AssertEquals(FImcCalc.CalculateImc(), 'Vous êtes en obésité modérée');
 
-  FImcCalc.setWeight(140.0);
+  FImcCalc.setWeight(120.0);
   AssertEquals(FImcCalc.CalculateImc(), 'Vous êtes en obésité sévère');
 
-  FImcCalc.setWeight(545.0);
+  FImcCalc.setWeight(245.0);
   AssertEquals(FImcCalc.CalculateImc(), 'Vous êtes en obésité morbide');
 
   FImcCalc.setWeight(1000000000.0);

@@ -19,16 +19,15 @@ type
     procedure SetSize(Size: real);
     procedure SetWeight(Weight: real);
     function CalculateImc: string;
-    constructor Create(Size: real; Weight: real);
+    constructor Create;
     destructor Destroy; override;
   end;
 
 implementation
 
-constructor TImcCalc.Create(Size: real; Weight: real);
+constructor TImcCalc.Create;
 begin
-     fSize:=Size;
-     fWeight:=Weight;
+
 end;
 
 destructor TImcCalc.Destroy;
@@ -54,11 +53,11 @@ begin
      MessageTxt:='';
      if not TryStrToFloat(Size,Flt) then
      begin
-        MessageTxt:='Vous devez donner une taille au format nombre ';
+        MessageTxt:='Vous devez donner une taille au format nombre' + LineEnding;
      end
      else if (StrToFloat(Size) < 50.0) or (StrToFloat(Size) > 300.0) then
      begin
-        MessageTxt:='Merci de donner une taille comprise entre 50 et 300 cm ';
+        MessageTxt:='Merci de donner une taille comprise entre 50 et 300 cm' + LineEnding;
      end;
 
      Result:=MessageTxt;

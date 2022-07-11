@@ -53,11 +53,11 @@ begin
      MessageTxt:='';
      if not TryStrToFloat(Size,Flt) then
      begin
-        MessageTxt:='Vous devez donner une taille au format nombre ';
+        MessageTxt:='Vous devez donner une taille au format nombre' + sLineBreak;
      end
      else if (StrToFloat(Size) < 50.0) or (StrToFloat(Size) > 300.0) then
      begin
-        MessageTxt:='Merci de donner une taille comprise entre 50 et 300 cm ';
+        MessageTxt:='Merci de donner une taille comprise entre 50 et 300 cm' + sLineBreak;
      end;
 
      Result:=MessageTxt;

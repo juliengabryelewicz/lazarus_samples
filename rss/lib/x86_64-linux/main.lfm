@@ -1,0 +1,85 @@
+object Form1: TForm1
+  Left = 340
+  Height = 544
+  Top = 308
+  Width = 974
+  Caption = 'Lecteur de flux RSS'
+  ClientHeight = 544
+  ClientWidth = 974
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.2.0'
+  object ListNews: TListBox
+    Left = 32
+    Height = 424
+    Top = 96
+    Width = 456
+    ItemHeight = 0
+    OnSelectionChange = ListNewsSelectionChange
+    TabOrder = 0
+    TopIndex = -1
+  end
+  object lTtitleNews: TLabel
+    Left = 32
+    Height = 17
+    Top = 72
+    Width = 129
+    Caption = 'Liste des actualités'
+    ParentColor = False
+  end
+  object cbRss: TComboBox
+    Left = 24
+    Height = 33
+    Top = 24
+    Width = 912
+    AutoSize = False
+    ItemHeight = 0
+    Items.Strings = (
+      'Challenges'
+      'Historia'
+      'Jeux vidéo.com'
+      'L''Express'
+      'Le Figaro'
+      'Le Monde'
+      'Marianne'
+    )
+    OnSelect = cbRssSelect
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'Choisissez le flux RSS de votre choix'
+  end
+  object lTitle: TLabel
+    Left = 504
+    Height = 50
+    Top = 72
+    Width = 400
+    AutoSize = False
+    Font.Height = -13
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    Layout = tlCenter
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object lDate: TLabel
+    Left = 504
+    Height = 1
+    Top = 161
+    Width = 1
+    Font.Height = -13
+    Font.Name = 'Sans'
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lDescription: TLabel
+    Left = 504
+    Height = 400
+    Top = 200
+    Width = 400
+    AutoSize = False
+    ParentColor = False
+    WordWrap = True
+  end
+end
