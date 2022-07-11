@@ -7,7 +7,7 @@
       <Unit>
         <Filename Value="rss.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
@@ -18,8 +18,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <TopLine Value="22"/>
-        <CursorPos X="33" Y="49"/>
+        <TopLine Value="53"/>
+        <CursorPos X="78" Y="8"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
@@ -27,9 +27,9 @@
         <Filename Value="rssreader.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="RssReader"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="50" Y="8"/>
+        <TopLine Value="2"/>
+        <CursorPos X="122" Y="16"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
@@ -53,6 +53,15 @@
         <TopLine Value="10"/>
         <CursorPos X="33" Y="54"/>
         <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../imc/testimccalc.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="49"/>
+        <CursorPos Y="73"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">

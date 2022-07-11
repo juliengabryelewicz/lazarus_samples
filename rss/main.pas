@@ -43,7 +43,14 @@ var
   newsSize, i : LongWord;
 begin
     Self.CleanElements;
-    RssReader.ChangeRss(cbRss.ItemIndex);
+    try
+       RssReader.ChangeRss(cbRss.ItemIndex);
+    except
+    on e: exception do
+      begin
+           Writeln('Une erreur est apparue : ' + e.Message);
+      end;
+    end;
     newsList:=RssReader.GetAllNews();
     newsSize:= Length(newsList);
     if newsSize=0 then

@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, Dom, XMLRead, fphttpclient, opensslsockets;
 
 const
-  RSS_LIST  : array of string = ('https://www.challenges.fr/rss.xml','https://www.historia.fr/flux-rss.xml','https://www.jeuxvideo.com/rss/rss.xml','https://www.lexpress.fr/rss/alaune.xml','https://www.lefigaro.fr/rss/figaro_actualites.xml','https://www.lemonde.fr/rss/une.xml','https://www.marianne.net/rss.xml');
+  RSS_LIST : array of string = ('https://www.challenges.fr/rss.xml','https://www.historia.fr/flux-rss.xml','https://www.jeuxvideo.com/rss/rss.xml','https://www.lexpress.fr/rss/alaune.xml','https://www.lefigaro.fr/rss/figaro_actualites.xml','https://www.lemonde.fr/rss/une.xml','https://www.marianne.net/rss.xml');
   RSS_ITEM = 'item';
   RSS_TITLE = 'title';
   RSS_DESCRIPTION = 'description';

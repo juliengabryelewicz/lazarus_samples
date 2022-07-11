@@ -63,9 +63,9 @@ implementation
       httpclient: TFPHTTPClient;
       xml : String;
       stream : TStringStream;
-      content    : TXMLDocument;
+      content : TXMLDocument;
       rootNews : TDOMElement;
-      listNews, lst  : TDOMNodeList;
+      listNews, lst : TDOMNodeList;
       sizeNews, etaille, i, j : LongWord;
       elementNews : TNews;
   begin
