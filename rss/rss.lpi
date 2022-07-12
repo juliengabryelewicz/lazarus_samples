@@ -46,6 +46,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="RssReader"/>
       </Unit>
+      <Unit>
+        <Filename Value="newsrepository.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NewsRepository"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

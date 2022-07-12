@@ -5,7 +5,7 @@ unit Main;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ComCtrls, RssReader;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ComCtrls, NewsRepository, RssReader;
 
 type
 
@@ -25,6 +25,7 @@ type
   private
     procedure CleanElements;
   public
+      NewsRepository: TNewsRepository;
       RssReader: TRssReader;
   end;
 
@@ -41,10 +42,19 @@ procedure TForm1.cbRssSelect(Sender: TObject);
 var
   newsList: array of TNews;
   newsSize, i : LongWord;
+  xmlRss: string;
 begin
     Self.CleanElements;
-    RssReader.ChangeRss(cbRss.ItemIndex);
-    newsList:=RssReader.GetAllNews();
+    try
+       xmlRss:=RssReader.ChangeRss(cbRss.ItemIndex);
+       NewsRepository.FillNews(xmlRss);
+    except
+    on e: exception do
+      begin
+           Writeln('Une erreur est apparue : ' + e.Message);
+      end;
+    end;
+    newsList:=NewsRepository.GetAllNews();
     newsSize:= Length(newsList);
     if newsSize=0 then
     begin
@@ -59,11 +69,13 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-     RssReader:= TRssReader.Create;
+    NewsRepository:= TNewsRepository.Create;
+    RssReader:= TRssReader.Create;
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
 begin
+     NewsRepository.Destroy;
      RssReader.Destroy;
 end;
 
@@ -71,7 +83,7 @@ procedure TForm1.ListNewsSelectionChange(Sender: TObject; User: boolean);
 var
   news: TNews;
 begin
-      news:=RssReader.GetNews(ListNews.ItemIndex);
+      news:=NewsRepository.GetNews(ListNews.ItemIndex);
       lTitle.Caption:=news.title;
       lDate.Caption:=news.pubdate;
       lDescription.Caption:=news.description;
