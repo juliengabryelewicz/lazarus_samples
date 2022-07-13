@@ -7,7 +7,7 @@
       <Unit>
         <Filename Value="reminder.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <CursorPos X="16" Y="13"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
@@ -19,8 +19,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="4"/>
-        <CursorPos X="40" Y="55"/>
+        <TopLine Value="35"/>
+        <CursorPos X="75" Y="57"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -41,7 +41,7 @@
         <ComponentName Value="FormCreation"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CreateReminder"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="6"/>
         <CursorPos X="22" Y="53"/>
         <UsageCount Value="20"/>
@@ -54,6 +54,22 @@
         <EditorIndex Value="1"/>
         <TopLine Value="46"/>
         <CursorPos X="28" Y="63"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../imc/main.pas"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="38"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../imc/imccalc.pas"/>
+        <UnitName Value="ImcCalc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="35"/>
+        <CursorPos X="81" Y="56"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
