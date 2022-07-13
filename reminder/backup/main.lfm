@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 1185
+  Height = 454
+  Top = 236
+  Width = 383
+  Caption = 'Rappels'
+  ClientHeight = 454
+  ClientWidth = 383
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnWindowStateChange = FormWindowStateChange
+  LCLVersion = '2.2.2.0'
+  object btnAdd: TBitBtn
+    Left = 24
+    Height = 30
+    Top = 408
+    Width = 160
+    Caption = 'Ajouter'
+    OnClick = btnAddClick
+    TabOrder = 0
+  end
+  object btnRemove: TBitBtn
+    Left = 200
+    Height = 30
+    Top = 408
+    Width = 160
+    Caption = 'Supprimer'
+    OnClick = btnRemoveClick
+    TabOrder = 1
+  end
+  object lsReminders: TListBox
+    Left = 24
+    Height = 360
+    Top = 24
+    Width = 336
+    ItemHeight = 0
+    MultiSelect = True
+    TabOrder = 2
+    TopIndex = -1
+  end
+  object TrayIcon1: TTrayIcon
+    BalloonHint = 'Alarm'
+    Visible = True
+    OnClick = TrayIcon1Click
+    Left = 440
+    Top = 352
+  end
+  object TimerRemind: TTimer
+    Interval = 60000
+    OnTimer = TimerRemindTimer
+    Left = 376
+    Top = 32
+  end
+end
