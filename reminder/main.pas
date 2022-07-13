@@ -44,17 +44,17 @@ procedure TForm1.TimerRemindTimer(Sender: TObject);
 var
   i: Integer;
   TimeStamp: string;
-  AlarmData: TStringArray;
+  ReminderData: TStringArray;
 begin
   TimeStamp := FormatDateTime('hh:nn', Time);
   for i := 0 to lsReminders.Items.Count - 1 do
   begin
     if i < lsReminders.Items.Count then
     begin
-      AlarmData := lsReminders.Items[i].Split('-');
-      if Trim(AlarmData[0]) = TimeStamp then
+      ReminderData := lsReminders.Items[i].Split('-');
+      if Trim(ReminderData[0]) = TimeStamp then
       begin
-        ShowMessage('Attention!' + 'Il est : ' + AlarmData[0] + sLineBreak + 'Rappel: ' + AlarmData[1]);
+        ShowMessage('Attention!' + 'Il est : ' + ReminderData[0] + sLineBreak + 'Rappel: ' + ReminderData[1]);
       end;
     end;
   end;

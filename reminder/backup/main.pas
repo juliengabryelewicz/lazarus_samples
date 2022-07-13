@@ -54,9 +54,7 @@ begin
       AlarmData := lsReminders.Items[i].Split('-');
       if Trim(AlarmData[0]) = TimeStamp then
       begin
-        ShowMessage('Attention!'#13#10#13#10
-                    + 'Il est : ' + AlarmData[0] + #13#10
-                    + 'Rappel: ' + AlarmData[1]);
+        ShowMessage('Attention!' + 'Il est : ' + AlarmData[0] + sLineBreak + 'Rappel: ' + AlarmData[1]);
       end;
     end;
   end;
