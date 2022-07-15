@@ -16,8 +16,7 @@
       <Unit>
         <Filename Value="testimccalc.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="46"/>
-        <CursorPos X="89" Y="54"/>
+        <CursorPos X="32" Y="16"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
@@ -27,6 +26,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="24"/>
         <CursorPos X="89" Y="38"/>
@@ -37,10 +37,9 @@
       <Unit>
         <Filename Value="imccalc.pas"/>
         <UnitName Value="ImcCalc"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="37"/>
-        <CursorPos X="90" Y="60"/>
+        <TopLine Value="56"/>
+        <CursorPos X="35" Y="50"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>

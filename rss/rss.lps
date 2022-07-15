@@ -7,10 +7,9 @@
       <Unit>
         <Filename Value="rss.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="64" Y="9"/>
         <UsageCount Value="30"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -19,20 +18,28 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <TopLine Value="37"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="53"/>
         <CursorPos X="39" Y="49"/>
         <UsageCount Value="30"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="rssreader.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="RssReader"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="18"/>
         <CursorPos X="53" Y="19"/>
         <UsageCount Value="30"/>
-        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newsrepository.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NewsRepository"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="19"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="../../../pascal/xmlread/Parcours.pas"/>
@@ -57,152 +64,21 @@
       </Unit>
       <Unit>
         <Filename Value="../imc/testimccalc.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos Y="73"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../../../tests/lazarus/ExceptionHandling/exceptionhandling.lpr"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="newsrepository.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="NewsRepository"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="35"/>
-        <CursorPos X="34" Y="8"/>
-        <UsageCount Value="23"/>
-        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="68" Column="46" TopLine="39"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="73" Column="35" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="51" Column="53" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="42" Column="3" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="52" Column="40" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="71" Column="12" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="83" Column="25" TopLine="66"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="46" Column="34" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="45" Column="34" TopLine="43"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="44" Column="34" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="43" Column="34" TopLine="41"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="44" Column="34" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="46" Column="34" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="45" Column="34" TopLine="43"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="74" Column="8" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="94" Column="83" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="70" Column="27" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="88" Column="32" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="93" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="70" Column="100" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="71" Column="100" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="70" Column="100" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="105" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="28" Column="46" TopLine="12"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="62" Column="24" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="28" Column="34" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="rssreader.pas"/>
-        <Caret Line="60" Column="7" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="rss.lpr"/>
-        <Caret Line="9" Column="64"/>
-      </Position>
-      <Position>
-        <Filename Value="newsrepository.pas"/>
-        <Caret Line="8" Column="34"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="49" Column="39" TopLine="37"/>
-      </Position>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

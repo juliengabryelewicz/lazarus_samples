@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 339
+  Height = 624
+  Top = 199
+  Width = 987
+  Caption = 'Simple éditeur de texte'
+  ClientHeight = 599
+  ClientWidth = 987
+  Menu = MainMenu1
+  LCLVersion = '2.2.2.0'
+  object EditorContainer: TMemo
+    Left = 0
+    Height = 599
+    Top = 0
+    Width = 987
+    Align = alClient
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 296
+    Top = 32
+    object FileMenu: TMenuItem
+      Caption = 'Fichier'
+      object OpenFileItem: TMenuItem
+        Caption = 'Ouvrir un fichier'
+        OnClick = OpenFileItemClick
+      end
+      object SaveFileItem: TMenuItem
+        Caption = 'Enregistrer sous...'
+        OnClick = SaveFileItemClick
+      end
+      object CloseItem: TMenuItem
+        Caption = 'Fermer'
+        OnClick = CloseItemClick
+      end
+    end
+    object HelpItem: TMenuItem
+      Caption = 'Aide'
+      object AboutItem: TMenuItem
+        Caption = 'A Propos'
+        OnClick = AboutItemClick
+      end
+    end
+  end
+  object OpenFileDialog: TOpenDialog
+    Left = 400
+    Top = 32
+  end
+  object SaveFileDialog: TSaveDialog
+    Left = 480
+    Top = 32
+  end
+end

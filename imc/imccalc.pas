@@ -13,12 +13,14 @@ type
   private
     fSize: real;
     fWeight: real;
+    procedure SetSize(Size: real);
+    procedure SetWeight(Weight: real);
   public
     class function CheckSize(Size: string): string;
     class function CheckWeight(Weight: string): string;
-    procedure SetSize(Size: real);
-    procedure SetWeight(Weight: real);
     function CalculateImc: string;
+    property Size: real read fSize write SetSize;
+    property Weight: real read fWeight write SetWeight;
     constructor Create;
     destructor Destroy; override;
   end;

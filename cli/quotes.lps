@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="quotes.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="45" Y="143"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../tests/lazarus/ReadFile/readfile.lpr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../reminder/main.pas"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="17" Y="71"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/home/julien/Téléchargements/FPProgT32/FPProgT32.lpr"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="15" Y="18"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../rss/rss.lpr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../rss/rssreader.pas"/>
+        <UnitName Value="RssReader"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="16"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../rss/newsrepository.pas"/>
+        <UnitName Value="NewsRepository"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../imc/imccalc.pas"/>
+        <UnitName Value="ImcCalc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-json/src/fpjson.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2373"/>
+        <CursorPos X="21" Y="2390"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="21">
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="34" Column="21" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="35" Column="36" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="34" Column="32" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="33" Column="17" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="35" Column="37" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="39" Column="41" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="63" Column="10" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="10" Column="45"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="56" Column="47" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="23" Column="62" TopLine="9"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="56" Column="62" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="99" Column="19" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="109" Column="15" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="110" Column="26" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="109" Column="15" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="23" Column="53"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="101" Column="30" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="122" Column="87" TopLine="95"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="24" Column="77" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="123" Column="110" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="56" Column="61" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="63" Column="20" TopLine="51"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

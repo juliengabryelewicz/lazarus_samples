@@ -7,49 +7,40 @@
       <Unit>
         <Filename Value="reminder.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="16" Y="13"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos X="27" Y="25"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="createreminder.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form2"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="Createreminder"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="22" Y="25"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="24"/>
+        <CursorPos X="91" Y="56"/>
+        <UsageCount Value="21"/>
       </Unit>
       <Unit>
         <Filename Value="createreminder.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCreation"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CreateReminder"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="3"/>
         <TopLine Value="6"/>
         <CursorPos X="22" Y="53"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="/home/julien/Téléchargements/alarm-clock-advanced-v1.0.1/unit1.pas"/>
         <UnitName Value="Unit1"/>
-        <EditorIndex Value="1"/>
         <TopLine Value="46"/>
         <CursorPos X="28" Y="63"/>
         <UsageCount Value="10"/>
@@ -65,14 +56,25 @@
       <Unit>
         <Filename Value="../imc/imccalc.pas"/>
         <UnitName Value="ImcCalc"/>
-        <EditorIndex Value="2"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="35"/>
         <CursorPos X="81" Y="56"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="/home/julien/Téléchargements/arith3_src/arithmetics3_common.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/home/julien/Téléchargements/arith3_src/arith3.lpr"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="17">
       <Position>
         <Filename Value="createreminder.pas"/>
         <Caret Line="19" Column="26"/>
@@ -130,14 +132,6 @@
         <Caret Line="56" Column="27" TopLine="30"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="12" Column="44" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="58" Column="66" TopLine="68"/>
-      </Position>
-      <Position>
         <Filename Value="reminder.lpr"/>
         <Caret Line="13" Column="16"/>
       </Position>
@@ -146,52 +140,12 @@
         <Caret Line="49" Column="11" TopLine="39"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="57" Column="31" TopLine="68"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="74" Column="18"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="38" Column="27" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="95" Column="8" TopLine="69"/>
-      </Position>
-      <Position>
         <Filename Value="createreminder.pas"/>
         <Caret Line="51" Column="50" TopLine="40"/>
       </Position>
       <Position>
         <Filename Value="createreminder.pas"/>
         <Caret Line="29" Column="72"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="58" Column="45" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="57" Column="45" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="84" Column="44" TopLine="66"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="50" Column="6" TopLine="43"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="49" Column="6" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="48" Column="6" TopLine="41"/>
       </Position>
     </JumpHistory>
     <RunParams>

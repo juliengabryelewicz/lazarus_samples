@@ -35,11 +35,11 @@ end;
 
 procedure  TTestImcCalc.CheckSize;
 begin
-  AssertEquals(TImcCalc.CheckSize(''), 'Vous devez donner une taille au format nombre ');
-  AssertEquals(TImcCalc.CheckSize('test'), 'Vous devez donner une taille au format nombre ');
-  AssertEquals(TImcCalc.CheckSize('120cm'), 'Vous devez donner une taille au format nombre ');
-  AssertEquals(TImcCalc.CheckSize('35'), 'Merci de donner une taille comprise entre 50 et 300 cm ');
-  AssertEquals(TImcCalc.CheckSize('350'), 'Merci de donner une taille comprise entre 50 et 300 cm ');
+  AssertEquals(TImcCalc.CheckSize(''), 'Vous devez donner une taille au format nombre');
+  AssertEquals(TImcCalc.CheckSize('test'), 'Vous devez donner une taille au format nombre');
+  AssertEquals(TImcCalc.CheckSize('120cm'), 'Vous devez donner une taille au format nombre');
+  AssertEquals(TImcCalc.CheckSize('35'), 'Merci de donner une taille comprise entre 50 et 300 cm');
+  AssertEquals(TImcCalc.CheckSize('350'), 'Merci de donner une taille comprise entre 50 et 300 cm');
   AssertEquals(TImcCalc.CheckSize('120'), '');
 end;
 
@@ -55,23 +55,26 @@ end;
 
 procedure  TTestImcCalc.CalculateImc;
 begin
-  FImcCalc.setSize(180.0);
-  FImcCalc.setWeight(45.0);
+  FImcCalc.Size:=180.0;
+  FImcCalc.Weight:=45.0;
   AssertEquals(FImcCalc.CalculateImc(), 'Vous êtes en insuffisance pondérale');
 
-  FImcCalc.setWeight(75.0);
+  FImcCalc.Weight:=75.0;
   AssertEquals(FImcCalc.CalculateImc(), 'Vous avez une corpulence normale');
 
-  FImcCalc.setWeight(90.0);
+  FImcCalc.Weight:=90.0;
   AssertEquals(FImcCalc.CalculateImc(), 'Vous avez en surpoids');
 
-  FImcCalc.setWeight(110.0);
+  FImcCalc.Weight:=110.0;
   AssertEquals(FImcCalc.CalculateImc(), 'Vous êtes en obésité modérée');
 
-  FImcCalc.setWeight(120.0);
+  FImcCalc.Weight:=120.0;
   AssertEquals(FImcCalc.CalculateImc(), 'Vous êtes en obésité sévère');
 
-  FImcCalc.setWeight(1000000000.0);
+  FImcCalc.Weight:=245.0;
+  AssertEquals(FImcCalc.CalculateImc(), 'Vous êtes en obésité morbide');
+
+  FImcCalc.Weight:=1000000000.0;
   AssertEquals(FImcCalc.CalculateImc(), 'Une erreur a eu lieu dans le calcul. Veuillez vérifier vos valeurs');
 end;
 

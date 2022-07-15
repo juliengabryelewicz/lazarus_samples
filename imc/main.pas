@@ -50,9 +50,8 @@ begin
      exit;
   end;
 
-  ImcCalc.setSize(StrToFloat(EditSize.Text));
-  ImcCalc.setWeight(StrToFloat(EditWeight.Text));
-
+  ImcCalc.Size:=StrToFloat(EditSize.Text);
+  ImcCalc.Weight:=StrToFloat(EditWeight.Text);
   ShowMessage(ImcCalc.CalculateImc());
 
 end;
