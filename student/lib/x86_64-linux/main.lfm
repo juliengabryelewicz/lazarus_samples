@@ -3,7 +3,7 @@ object MainForm: TMainForm
   Height = 917
   Top = 118
   Width = 1116
-  Caption = 'MainForm'
+  Caption = 'Logiciel de gestion des élèves'
   ClientHeight = 892
   ClientWidth = 1116
   Menu = MainMenu

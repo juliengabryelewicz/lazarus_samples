@@ -19,23 +19,23 @@ object MainForm: TMainForm
     Columns = <    
       item
         Title.Caption = 'Prénom'
-        Width = 150
+        Width = 200
         FieldName = 'prenom'
       end    
       item
         Title.Caption = 'Nom'
-        Width = 150
+        Width = 200
         FieldName = 'Nom'
       end    
       item
         Title.Caption = 'Date de naissance'
-        Width = 130
+        Width = 200
         FieldName = 'date_naissance'
         DisplayFormat = 'dd/mm/yyyy'
       end    
       item
         Title.Caption = 'Classe'
-        Width = 300
+        Width = 160
         FieldName = 'nom_1'
       end>
     DataSource = DataModule1.DataSourceMain
@@ -103,27 +103,22 @@ object MainForm: TMainForm
     Columns = <    
       item
         Title.Caption = 'Nom de l''examen'
-        Width = 120
+        Width = 250
         FieldName = 'nom'
       end    
       item
         Title.Caption = 'Note'
-        Width = 120
+        Width = 170
         FieldName = 'note'
       end    
       item
         Title.Caption = 'Date de l''examen'
-        Width = 120
+        Width = 170
         FieldName = 'date_note'
       end    
       item
-        Title.Caption = 'Commentaire'
-        Width = 250
-        FieldName = 'commentaire'
-      end    
-      item
         Title.Caption = 'Matière'
-        Width = 120
+        Width = 170
         FieldName = 'nom_1'
       end>
     DataSource = DataModule1.DataSourceNotes
