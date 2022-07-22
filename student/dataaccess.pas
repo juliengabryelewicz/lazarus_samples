@@ -199,6 +199,7 @@ begin
          Result := False;
        end;
    end;
+   INI.Free;
 end;
 procedure TDataModule1.Logoff;
 (* Déconnexion de la base de données *)

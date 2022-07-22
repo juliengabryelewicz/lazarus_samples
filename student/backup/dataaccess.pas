@@ -13,7 +13,7 @@ type
     { TCBClasse }
 
     TCBClasse = class
-    (* Données invisibles d'un élément de combobox contenant la liste des clients *)
+    (* Données invisibles d'un élément de combobox contenant la liste des classes *)
     strict private
       FIdClasse : Integer;
     public
