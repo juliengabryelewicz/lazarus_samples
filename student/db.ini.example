@@ -1,0 +1,5 @@
+[INIDB]
+HostName=localhost
+DatabaseName=my_database
+UserName=root
+Password=root

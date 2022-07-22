@@ -1,0 +1,221 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 287
+  HorizontalOffset = 376
+  VerticalOffset = 442
+  Width = 537
+  object SQLConnection: TMySQL80Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Transaction = SQLTransaction
+    CharSet = 'UTF8'
+    SkipLibraryVersionCheck = False
+    Left = 48
+    Top = 16
+  end
+  object SQLTransaction: TSQLTransaction
+    Active = False
+    Database = SQLConnection
+    Left = 168
+    Top = 16
+  end
+  object SQLQueryClasses: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'nom'
+        DataType = ftString
+        Size = 50
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    Params = <>
+    Macros = <>
+    Left = 464
+    Top = 160
+  end
+  object DataSourceClasses: TDataSource
+    DataSet = SQLQueryClasses
+    Left = 320
+    Top = 160
+  end
+  object DataSourceMatieres: TDataSource
+    DataSet = SQLQueryMatieres
+    Left = 320
+    Top = 88
+  end
+  object SQLQueryMatieres: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'nom'
+        DataType = ftString
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    Params = <>
+    Macros = <>
+    Left = 464
+    Top = 88
+  end
+  object SQLQueryMain: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'prenom'
+        DataType = ftString
+        Size = 100
+      end    
+      item
+        Name = 'nom'
+        DataType = ftString
+        Size = 100
+      end    
+      item
+        Name = 'date_naissance'
+        DataType = ftDate
+      end    
+      item
+        Name = 'commentaire'
+        DataType = ftMemo
+      end    
+      item
+        Name = 'id_classe'
+        DataType = ftWord
+      end    
+      item
+        Name = 'nom_1'
+        DataType = ftString
+        Size = 100
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    Params = <>
+    Macros = <>
+    Left = 464
+    Top = 16
+  end
+  object DataSourceMain: TDataSource
+    DataSet = SQLQueryMain
+    OnDataChange = DataSourceMainDataChange
+    Left = 320
+    Top = 16
+  end
+  object SQLQueryNotes: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'nom'
+        DataType = ftString
+      end    
+      item
+        Name = 'note'
+        DataType = ftFloat
+      end    
+      item
+        Name = 'commentaire'
+        DataType = ftMemo
+      end    
+      item
+        Name = 'date_note'
+        DataType = ftDate
+      end    
+      item
+        Name = 'id_eleve'
+        DataType = ftWord
+      end    
+      item
+        Name = 'id_matiere'
+        DataType = ftWord
+      end    
+      item
+        Name = 'nom_1'
+        DataType = ftString
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    Params = <>
+    Macros = <>
+    Left = 464
+    Top = 224
+  end
+  object DataSourceNotes: TDataSource
+    DataSet = SQLQueryNotes
+    Left = 320
+    Top = 232
+  end
+  object DataSourceTempNotes: TDataSource
+    DataSet = SQLQueryTempNotes
+    Left = 48
+    Top = 96
+  end
+  object SQLQueryTempNotes: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'nom'
+        DataType = ftString
+      end    
+      item
+        Name = 'moyenne'
+        DataType = ftFloat
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    Params = <>
+    Macros = <>
+    Left = 168
+    Top = 96
+  end
+  object frReport1: TfrReport
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    Left = 40
+    Top = 216
+  end
+  object frDBDataSet1: TfrDBDataSet
+    DataSet = SQLQueryTempNotes
+    DataSource = DataSourceTempNotes
+    Left = 168
+    Top = 216
+  end
+  object frDBDataSet2: TfrDBDataSet
+    DataSet = SQLQueryTempEleves
+    DataSource = DataSourceTempEleves
+    Left = 96
+    Top = 216
+  end
+  object SQLQueryTempEleves: TSQLQuery
+    FieldDefs = <    
+      item
+        Name = 'prenom'
+        DataType = ftString
+      end    
+      item
+        Name = 'nom'
+        DataType = ftString
+      end    
+      item
+        Name = 'date_naissance'
+        DataType = ftDate
+      end    
+      item
+        Name = 'commentaire'
+        DataType = ftMemo
+      end    
+      item
+        Name = 'nom_1'
+        DataType = ftString
+      end>
+    Database = SQLConnection
+    Transaction = SQLTransaction
+    Params = <>
+    Macros = <>
+    Left = 168
+    Top = 160
+  end
+  object DataSourceTempEleves: TDataSource
+    DataSet = SQLQueryTempEleves
+    Left = 48
+    Top = 160
+  end
+end
