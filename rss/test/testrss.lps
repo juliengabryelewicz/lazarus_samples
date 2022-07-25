@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="testrss.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="57" Y="13"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="rsstest.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RssTest"/>
+        <CursorPos X="43" Y="17"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../src/rssreader.pas"/>
+        <UnitName Value="RssReader"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="23"/>
+        <CursorPos X="20" Y="8"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../src/main.pas"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="76"/>
+        <CursorPos X="5" Y="58"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newsrepository.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NewsRepository"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16" Y="8"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newsrepositorytest.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NewsRepositoryTest"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="125" Y="21"/>
+        <FoldState Value=" T6U01}"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../src/newsrepository.pas"/>
+        <UnitName Value="NewsRepository"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="42"/>
+        <CursorPos X="15" Y="4"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="3">
+      <Position>
+        <Filename Value="rsstest.pas"/>
+        <Caret Line="35" Column="58" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="rsstest.pas"/>
+        <Caret Line="30" Column="39" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="rsstest.pas"/>
+        <Caret Line="36" Column="9" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="rsstest.pas"/>
+        <Caret Line="31" Column="19" TopLine="18"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="newsrepositorytest.pas"/>
+        <Line Value="31"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>
