@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}
   Classes, SysUtils, CustApp
-  { you can add units after this }, fpjson, jsonparser, jsonscanner;
+  { you can add units after this }, fpjson, jsonparser, jsonscanner, QuoteRepository in '../src/quoterepository.pas';
 
 type
 
@@ -21,9 +21,6 @@ type
     constructor Create(TheOwner: TComponent); override;
     destructor Destroy; override;
     procedure WriteHelp; virtual;
-    function GetSpecificQuote(Id:integer;JsonData:TJSONData): TJSONObject; virtual;
-    function GetRandomQuote(JsonData:TJSONData): TJSONObject; virtual;
-    function GetSearchQuote(Search: string; JsonData:TJSONData): TQuotesArray; virtual;
     procedure WriteQuote(Quote: TJSONObject); virtual;
   end;
 
@@ -53,14 +50,14 @@ begin
       end
       else if HasOption('i','id') then
       begin
-        Quote:=GetSpecificQuote(StrToInt(GetOptionValue('i','id')), JsonData);
+        Quote:=TQuoteRepository.GetSpecificQuote(StrToInt(GetOptionValue('i','id')), JsonData);
         WriteQuote(Quote);
         Terminate;
         Exit;
       end
       else if HasOption('s','search') then
       begin
-        QuotesArray:=GetSearchQuote(GetOptionValue('s','search'), JsonData);
+        QuotesArray:=TQuoteRepository.GetSearchQuote(GetOptionValue('s','search'), JsonData);
         for i:=0 to Length(QuotesArray)-1 do
         begin
           WriteQuote(QuotesArray[i]);
@@ -68,12 +65,18 @@ begin
         Terminate;
         Exit;
       end
-      else
+      else if HasOption('r','random') then
       begin
-        Quote:=GetRandomQuote(JsonData);
+        Quote:=TQuoteRepository.GetRandomQuote(JsonData);
         WriteQuote(Quote);
         Terminate;
         Exit;
+      end
+      else
+      begin
+       WriteHelp;
+       Terminate;
+       Exit;
       end;
     finally
       FreeAndNil(JsonData);
@@ -101,62 +104,7 @@ procedure TQuotes.WriteHelp;
 begin
   writeln('Chercher une citation spécifique par son identifiant: -i ou --id');
   writeln('Rechercher par mot-clé: -s ou --search');
-  writeln('Ne rien mettre pour avoir une citation aléatoire');
-end;
-
-function TQuotes.GetSpecificQuote(Id: integer; JsonData:TJSONData): TJSONObject;
-var
-  quote, quotes : TJSONObject;
-  tab : TJSONArray;
-  i : integer;
-begin
-  quotes := TJSONObject(JsonData);
-  tab:=quotes.Arrays['citations'];
-  for i:=0 to tab.Count-1 do
-  begin
-   quote:= tab.Objects[i];
-   if quote.Integers['id'] = Id then
-   begin
-     Result:=quote;
-   end;
-  end;
-end;
-
-function TQuotes.GetRandomQuote(JsonData:TJSONData): TJSONObject;
-var
-  quotes : TJSONObject;
-  tab : TJSONArray;
-  i : integer;
-begin
-  Randomize;
-  quotes := TJSONObject(JsonData);
-  tab:=quotes.Arrays['citations'];
-  i:=Random(quotes.Arrays['citations'].Count);
-  Result:= tab.Objects[i];
-end;
-
-function TQuotes.GetSearchQuote(Search: string; JsonData:TJSONData): TQuotesArray;
-var
-  quote, quotes : TJSONObject;
-  tab : TJSONArray;
-  i, j : integer;
-  quotesArray : TQuotesArray;
-begin
-  quotes := TJSONObject(JsonData);
-  tab:=quotes.Arrays['citations'];
-  j:=0;
-  SetLength(quotesArray,tab.Count);
-  for i:=0 to tab.Count-1 do
-  begin
-   quote:= tab.Objects[i];
-   if (pos(Search, quote.Strings['citation']) <> 0) or (pos(Search, quote.Strings['auteur']) <> 0) then
-   begin
-     quotesArray[j]:=quote;
-     j:=j+1;
-   end;
-  end;
-  SetLength(quotesArray,j);
-  Result:=quotesArray;
+  writeln('Citation aléatoire : -r ou --random');
 end;
 
 procedure TQuotes.WriteQuote(Quote: TJSONObject);

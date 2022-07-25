@@ -8,8 +8,8 @@
         <Filename Value="quotes.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="140"/>
-        <CursorPos X="136" Y="152"/>
+        <TopLine Value="56"/>
+        <CursorPos X="33" Y="70"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
@@ -65,8 +65,24 @@
         <CursorPos X="21" Y="2390"/>
         <UsageCount Value="10"/>
       </Unit>
+      <Unit>
+        <Filename Value="../test/testquotes.pas"/>
+        <UnitName Value="TestQuotes"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="84" Y="8"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="quoterepository.pas"/>
+        <UnitName Value="QuoteRepository"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="3" Y="12"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="26">
+    <JumpHistory HistoryIndex="27">
       <Position>
         <Filename Value="quotes.lpr"/>
         <Caret Line="34" Column="21" TopLine="26"/>
@@ -174,6 +190,10 @@
       <Position>
         <Filename Value="quotes.lpr"/>
         <Caret Line="140" Column="81" TopLine="133"/>
+      </Position>
+      <Position>
+        <Filename Value="../test/testquotes.pas"/>
+        <Caret Line="8" Column="84"/>
       </Position>
     </JumpHistory>
     <RunParams>

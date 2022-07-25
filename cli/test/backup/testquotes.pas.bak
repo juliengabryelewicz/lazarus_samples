@@ -1,0 +1,41 @@
+unit TestQuotes;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, fpcunit, testutils, testregistry;
+
+type
+
+  TTestQuotes= class(TTestCase)
+  protected
+    procedure SetUp; override;
+    procedure TearDown; override;
+  published
+    procedure TestHookUp;
+  end;
+
+implementation
+
+procedure TTestQuotes.TestHookUp;
+begin
+  Fail('Écrivez votre propre test');
+end;
+
+procedure TTestQuotes.SetUp;
+begin
+
+end;
+
+procedure TTestQuotes.TearDown;
+begin
+
+end;
+
+initialization
+
+  RegisterTest(TTestQuotes);
+end.
+

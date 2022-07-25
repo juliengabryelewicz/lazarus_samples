@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/media/julien/DATA/github/lazarus/cli/src/lib/x86_64-linux -Fu/media/julien/DATA/github/lazarus/cli/src/ -FU/media/julien/DATA/github/lazarus/cli/src/lib/x86_64-linux/ -FE/media/julien/DATA/github/lazarus/cli/src/ -o/media/julien/DATA/github/lazarus/cli/src/quotes quotes.lpr"/>
+</CONFIG>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="clitest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="testquotes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TestQuotes"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="40"/>
+        <CursorPos X="40" Y="47"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="quoterepository.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="QuoteRepository"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="33"/>
+        <CursorPos X="7" Y="52"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../src/quotes.lpr"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="96" Y="18"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../imc/test/imctest.lpr"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../imc/test/testimccalc.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="16"/>
+        <CursorPos X="3" Y="38"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../src/quoterepository.pas"/>
+        <UnitName Value="QuoteRepository"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="6">
+      <Position>
+        <Filename Value="testquotes.pas"/>
+        <Caret Line="10" Column="22"/>
+      </Position>
+      <Position>
+        <Filename Value="testquotes.pas"/>
+        <Caret Line="8" Column="84"/>
+      </Position>
+      <Position>
+        <Filename Value="testquotes.pas"/>
+        <Caret Line="57" Column="23" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="testquotes.pas"/>
+        <Caret Line="10" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="testquotes.pas"/>
+        <Caret Line="16" Column="28" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="quoterepository.pas"/>
+        <Caret Line="52" Column="7" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="testquotes.pas"/>
+        <Caret Line="61" Column="19" TopLine="36"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
