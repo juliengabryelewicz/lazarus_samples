@@ -11,6 +11,7 @@ uses
 
 type
 
+  TQuotesArray = array of TJSONObject;
   { TQuotes }
 
   TQuotes = class(TCustomApplication)
@@ -20,9 +21,10 @@ type
     constructor Create(TheOwner: TComponent); override;
     destructor Destroy; override;
     procedure WriteHelp; virtual;
-    procedure WriteSpecificQuote(Id:integer;JsonData:TJSONData); virtual;
-    procedure WriteRandomQuote(JsonData:TJSONData); virtual;
-    procedure WriteSearchQuote(Search: string; JsonData:TJSONData); virtual;
+    function GetSpecificQuote(Id:integer;JsonData:TJSONData): TJSONObject; virtual;
+    function GetRandomQuote(JsonData:TJSONData): TJSONObject; virtual;
+    function GetSearchQuote(Search: string; JsonData:TJSONData): TQuotesArray; virtual;
+    procedure WriteQuote(Quote: TJSONObject); virtual;
   end;
 
 { TQuotes }
@@ -33,6 +35,9 @@ var
   Parseur : TJSONParser;
   JsonData : TJSONData;
   ErrorMsg: String;
+  Quote: TJSONObject;
+  QuotesArray : TQuotesArray;
+  i : Integer;
 begin
   Flux := TFileStream.Create('citations.json', fmopenRead);
   try
@@ -48,19 +53,25 @@ begin
       end
       else if HasOption('i','id') then
       begin
-        WriteSpecificQuote(StrToInt(GetOptionValue('i','id')), JsonData);
+        Quote:=GetSpecificQuote(StrToInt(GetOptionValue('i','id')), JsonData);
+        WriteQuote(Quote);
         Terminate;
         Exit;
       end
       else if HasOption('s','search') then
       begin
-        WriteSearchQuote(GetOptionValue('s','search'), JsonData);
+        QuotesArray:=GetSearchQuote(GetOptionValue('s','search'), JsonData);
+        for i:=0 to Length(QuotesArray)-1 do
+        begin
+          WriteQuote(QuotesArray[i]);
+        end;
         Terminate;
         Exit;
       end
       else
       begin
-        WriteRandomQuote(JsonData);
+        Quote:=GetRandomQuote(JsonData);
+        WriteQuote(Quote);
         Terminate;
         Exit;
       end;
@@ -88,13 +99,12 @@ end;
 
 procedure TQuotes.WriteHelp;
 begin
-  writeln('Aide: -h ou --help');
   writeln('Chercher une citation spécifique par son identifiant: -i ou --id');
   writeln('Rechercher par mot-clé: -s ou --search');
   writeln('Ne rien mettre pour avoir une citation aléatoire');
 end;
 
-procedure TQuotes.WriteSpecificQuote(Id: integer; JsonData:TJSONData);
+function TQuotes.GetSpecificQuote(Id: integer; JsonData:TJSONData): TJSONObject;
 var
   quote, quotes : TJSONObject;
   tab : TJSONArray;
@@ -107,15 +117,14 @@ begin
    quote:= tab.Objects[i];
    if quote.Integers['id'] = Id then
    begin
-     writeln(UTF8Encode(quote.Strings['citation']));
-     writeln('Auteur : '+UTF8Encode(quote.Strings['auteur']));
+     Result:=quote;
    end;
   end;
 end;
 
-procedure TQuotes.WriteRandomQuote(JsonData:TJSONData);
+function TQuotes.GetRandomQuote(JsonData:TJSONData): TJSONObject;
 var
-  quote, quotes : TJSONObject;
+  quotes : TJSONObject;
   tab : TJSONArray;
   i : integer;
 begin
@@ -123,28 +132,37 @@ begin
   quotes := TJSONObject(JsonData);
   tab:=quotes.Arrays['citations'];
   i:=Random(quotes.Arrays['citations'].Count);
-  quote:= tab.Objects[i];
-  writeln(UTF8Encode(quote.Strings['citation']));
-  writeln('Auteur : '+UTF8Encode(quote.Strings['auteur']));
+  Result:= tab.Objects[i];
 end;
 
-procedure TQuotes.WriteSearchQuote(Search: string; JsonData:TJSONData);
+function TQuotes.GetSearchQuote(Search: string; JsonData:TJSONData): TQuotesArray;
 var
   quote, quotes : TJSONObject;
   tab : TJSONArray;
-  i : integer;
+  i, j : integer;
+  quotesArray : TQuotesArray;
 begin
   quotes := TJSONObject(JsonData);
   tab:=quotes.Arrays['citations'];
+  j:=0;
+  SetLength(quotesArray,tab.Count);
   for i:=0 to tab.Count-1 do
   begin
    quote:= tab.Objects[i];
    if (pos(Search, quote.Strings['citation']) <> 0) or (pos(Search, quote.Strings['auteur']) <> 0) then
    begin
-     writeln(UTF8Encode(quote.Strings['citation']));
-     writeln('Auteur : '+UTF8Encode(quote.Strings['auteur']));
+     quotesArray[j]:=quote;
+     j:=j+1;
    end;
   end;
+  SetLength(quotesArray,j);
+  Result:=quotesArray;
+end;
+
+procedure TQuotes.WriteQuote(Quote: TJSONObject);
+begin
+  writeln(UTF8Encode(Quote.Strings['citation']));
+  writeln('Auteur : '+UTF8Encode(Quote.Strings['auteur']));
 end;
 
 var

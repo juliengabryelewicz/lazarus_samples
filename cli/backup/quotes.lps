@@ -8,9 +8,9 @@
         <Filename Value="quotes.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="88"/>
-        <CursorPos X="6" Y="90"/>
-        <UsageCount Value="23"/>
+        <TopLine Value="140"/>
+        <CursorPos X="8" Y="147"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -21,11 +21,10 @@
       <Unit>
         <Filename Value="../reminder/main.pas"/>
         <UnitName Value="Main"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="60"/>
         <CursorPos X="17" Y="71"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="/home/julien/Téléchargements/FPProgT32/FPProgT32.lpr"/>
@@ -37,7 +36,7 @@
       <Unit>
         <Filename Value="../rss/rss.lpr"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="../rss/rssreader.pas"/>
@@ -49,9 +48,8 @@
       <Unit>
         <Filename Value="../rss/newsrepository.pas"/>
         <UnitName Value="NewsRepository"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="../imc/imccalc.pas"/>
@@ -68,7 +66,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="21">
+    <JumpHistory HistoryIndex="26">
       <Position>
         <Filename Value="quotes.lpr"/>
         <Caret Line="34" Column="21" TopLine="26"/>
@@ -156,6 +154,26 @@
       <Position>
         <Filename Value="quotes.lpr"/>
         <Caret Line="63" Column="20" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="149" Column="127" TopLine="131"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="14" Column="38" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="27" Column="44" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="64" Column="40" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="quotes.lpr"/>
+        <Caret Line="140" Column="81" TopLine="133"/>
       </Position>
     </JumpHistory>
     <RunParams>
